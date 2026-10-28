@@ -31,6 +31,12 @@ app.get("/projects", (req, res) => {
   });
 });
 
+app.get("/services", (req, res) => {
+  res.render("services", {
+    title: "Our Services",
+  });
+});
+
 app.get("/contact", (req, res) => {
   res.render("contact", {
     title: "Contact Us | South-Pacific Engineering Ltd",
