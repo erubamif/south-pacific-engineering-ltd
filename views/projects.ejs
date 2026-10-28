@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <%- include("partials/header") %>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">OUR WORK</p>
+        <h1>Projects &amp; Experience</h1>
+        <p>
+          Engineering solutions designed to support performance,
+          safety, reliability, and long-term asset value.
+        </p>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">PROJECT PORTFOLIO</p>
+          <h2>Our Project Portfolio</h2>
+          <p>
+            Explore our project portfolio as we document our engineering
+            work and solutions across our service areas.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+              alt="Construction site with structural development"
+              loading="lazy"
+            >
+            <div class="project-card-content">
+              <span class="project-category">Civil Engineering</span>
+              <h3>Civil Engineering Solutions</h3>
+              <p>
+                Engineering support for infrastructure and construction
+                requirements, with an emphasis on quality and safety.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+              alt="Engineering professional working with technical equipment"
+              loading="lazy"
+            >
+            <div class="project-card-content">
+              <span class="project-category">Mechanical Engineering</span>
+              <h3>Mechanical Systems Support</h3>
+              <p>
+                Engineering solutions focused on equipment performance,
+                operational efficiency, and reliability.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+              alt="Industrial engineering and technical operations"
+              loading="lazy"
+            >
+            <div class="project-card-content">
+              <span class="project-category">Project Management</span>
+              <h3>Project Delivery &amp; Coordination</h3>
+              <p>
+                A structured approach to coordinating project activities,
+                resources, quality, and safety requirements.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <p class="project-note">
+          The examples above are illustrative service categories, not
+          verified completed projects. Confirmed company projects can
+          be added to this portfolio as details become available.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+          <h2>Let's Discuss Your Engineering Needs</h2>
+          <p>
+            Contact our team to discuss your project requirements
+            and explore possible solutions.
+          </p>
+          <a href="/contact" class="btn btn-primary">
+            Contact Us <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <%- include("partials/footer") %>
+
+</body>
+</html>

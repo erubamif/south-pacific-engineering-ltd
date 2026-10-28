@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title><%= title %> | Civil Engineering & Construction</title>
+  <meta
+    name="description"
+    content="South Pacific Engineering delivers professional civil engineering, construction, infrastructure, and facility management solutions."
+  >
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Shared Navigation -->
+  <%- include("partials/header") %>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Civil engineering and construction project"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <p class="section-label">Engineering the Future</p>
+
+        <h1>
+          BUILDING<br>
+          <span>WHAT</span> MATTERS.
+        </h1>
+
+        <p class="hero-description">
+          Reliable engineering. Exceptional construction.
+          Infrastructure built with precision, strength, and purpose.
+        </p>
+
+        <div class="hero-actions">
+          <a href="/projects" class="btn btn-primary">
+            Explore Our Projects <span aria-hidden="true">↗</span>
+          </a>
+          <a href="/about" class="btn btn-outline">
+            Discover Our Company
+          </a>
+        </div>
+
+        <div class="hero-bottom">
+          <span>01 / ENGINEERING EXCELLENCE</span>
+          <span>BUILT ON PRECISION. DRIVEN BY PURPOSE.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section intro" id="about">
+      <div class="container intro-grid">
+        <div>
+          <p class="section-label">Who We Are</p>
+          <h2 class="section-title">
+            ENGINEERING<br>
+            WITH PURPOSE.
+          </h2>
+        </div>
+
+        <div class="intro-copy">
+          <p class="section-description">
+            South Pacific Engineering is focused on delivering dependable
+            engineering and construction solutions. We believe every
+            successful project begins with careful planning, technical
+            expertise, and a commitment to quality.
+          </p>
+
+          <a href="/about" class="text-link">
+            Let's Build Together <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+      <div class="container">
+        <p class="section-label">What We Do</p>
+        <h2 class="section-title">OUR EXPERTISE.</h2>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>Civil Engineering</h3>
+            <p>
+              Engineering planning and technical solutions designed
+              around project requirements.
+            </p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Construction</h3>
+            <p>
+              Structured construction delivery with attention to
+              workmanship, safety, and quality.
+            </p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Infrastructure</h3>
+            <p>
+              Practical infrastructure solutions that support
+              communities, businesses, and development.
+            </p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <h3>Facility Management</h3>
+            <p>
+              Comprehensive facility management services to help
+              maintain buildings, equipment, and operational performance.
+            </p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <p class="section-label">Selected Work</p>
+        <h2 class="section-title">BUILT TO LAST.</h2>
+
+        <p class="section-description projects-intro">
+          Explore examples of engineering and construction work.
+          Replace these sample projects with verified company projects.
+        </p>
+
+        <div class="project-grid">
+          <article class="project-card project-large">
+            <img
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+              alt="Construction site with structural work underway"
+              loading="lazy"
+            >
+            <div class="project-info">
+              <span>CONSTRUCTION</span>
+              <h3>Building Development</h3>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+              alt="Modern architectural structure"
+              loading="lazy"
+            >
+            <div class="project-info">
+              <span>ENGINEERING</span>
+              <h3>Structural Design</h3>
+            </div>
+          </article>
+        </div>
+
+        <p class="project-note">
+          These images are illustrative placeholders and do not represent
+          verified completed projects by South Pacific Engineering.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Call to Action -->
+    <section class="section contact" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <p class="section-label">Have a Project in Mind?</p>
+          <h2 class="section-title">
+            LET'S BUILD<br>
+            SOMETHING GREAT.
+          </h2>
+          <p class="section-description">
+            Tell us about your project and the engineering support you need.
+          </p>
+        </div>
+
+        <a href="/contact#quote" class="btn btn-primary">
+          Discuss Your Project <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <%- include("partials/footer") %>
