@@ -314,11 +314,12 @@ img {
   padding: 32px;
   border-right: 1px solid #414447;
   border-bottom: 1px solid #414447;
-  transition: background 0.25s ease;
+  transition: background 0.25s ease, transform 0.25s ease;
 }
 
 .service-card:hover {
   background: var(--color-dark-light);
+  transform: translateY(-3px);
 }
 
 .service-number {
@@ -328,7 +329,8 @@ img {
 }
 
 .service-card h3 {
-  font-size: 1.45rem;
+  font-size: 1.35rem;
+  line-height: 1.4;
   margin: 42px 0 12px;
 }
 
@@ -345,6 +347,34 @@ img {
   right: 30px;
   color: var(--color-orange);
   font-size: 1.3rem;
+}
+
+.services-action {
+  margin-top: 30px;
+}
+
+/* Tablet layout */
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: 230px;
+    padding: 26px;
+  }
+
+  .service-card h3 {
+    margin-top: 35px;
+    font-size: 1.25rem;
+  }
 }
 
 /* PROJECTS */
@@ -757,5 +787,211 @@ img {
 
   .brand {
     gap: 8px;
+  }
+}
+
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background: var(--color-dark-light);
+}
+
+.why-choose-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: end;
+  margin-bottom: 45px;
+}
+
+.why-choose-header .section-description {
+  max-width: 520px;
+  margin-bottom: 8px;
+}
+
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid #414447;
+  border-left: 1px solid #414447;
+}
+
+.why-card {
+  min-height: 260px;
+  padding: 30px 25px;
+  border-right: 1px solid #414447;
+  border-bottom: 1px solid #414447;
+  transition: background 0.25s ease;
+}
+
+.why-card:hover {
+  background: var(--color-dark);
+}
+
+.why-number {
+  color: var(--color-orange);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.why-card h3 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 45px 0 14px;
+}
+
+.why-card p {
+  color: var(--color-grey);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .why-choose-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .why-choose-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-card {
+    min-height: 220px;
+    padding: 25px;
+  }
+
+  .why-card h3 {
+    margin-top: 35px;
+  }
+}
+
+/* Responsive Project Images */
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.project-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.04);
+}
+
+/* Larger screens */
+@media (min-width: 901px) {
+  .project-large img {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .project-card img,
+  .project-large img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .project-card img,
+  .project-large img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
+
+
+/* Clickable Project Images */
+.project-image-link {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.project-image-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Lightbox Viewer */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.95);
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 30px;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 42px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.lightbox-close:hover {
+  color: var(--color-orange);
+}
+
+/* Mobile Lightbox */
+@media (max-width: 600px) {
+  .lightbox {
+    padding: 50px 10px 20px;
+  }
+
+  .lightbox img {
+    max-width: 100%;
+    max-height: 85vh;
+  }
+
+  .lightbox-close {
+    top: 12px;
+    right: 18px;
   }
 }

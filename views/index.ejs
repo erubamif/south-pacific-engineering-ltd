@@ -5,26 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title><%= title %> | Civil Engineering & Construction</title>
+  <title><%= title %> | South-Pacific Engineering Ltd</title>
+
   <meta
     name="description"
-    content="South Pacific Engineering delivers professional civil engineering, construction, infrastructure, and facility management solutions."
+    content="South-Pacific Engineering Ltd delivers integrated Civil, Mechanical and Refractory Engineering, Project Management, Facility Management and Safety Management solutions."
   >
 
+  <meta name="keywords" content="South-Pacific Engineering Ltd, Civil Engineering, Mechanical Engineering, Refractory Engineering, Project Management, Facility Management, Safety Management">
+
   <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js" defer></script>
 </head>
+
 <body>
 
   <!-- Shared Navigation -->
   <%- include("partials/header") %>
 
   <main>
+
     <!-- Hero Section -->
     <section class="hero" id="home">
-      <div class="hero-image" role="img" aria-label="Civil engineering and construction project"></div>
+      <div
+        class="hero-image"
+        role="img"
+        aria-label="Civil engineering and construction project">
+      </div>
+
       <div class="hero-overlay"></div>
 
       <div class="container hero-content">
+
         <p class="section-label">Engineering the Future</p>
 
         <h1>
@@ -38,26 +50,34 @@
         </p>
 
         <div class="hero-actions">
+
           <a href="/projects" class="btn btn-primary">
             Explore Our Projects <span aria-hidden="true">↗</span>
           </a>
+
           <a href="/about" class="btn btn-outline">
             Discover Our Company
           </a>
+
         </div>
 
         <div class="hero-bottom">
           <span>01 / ENGINEERING EXCELLENCE</span>
           <span>BUILT ON PRECISION. DRIVEN BY PURPOSE.</span>
         </div>
+
       </div>
     </section>
 
-    <!-- Introduction -->
+
+    <!-- Introduction Section -->
     <section class="section intro" id="about">
+
       <div class="container intro-grid">
+
         <div>
           <p class="section-label">Who We Are</p>
+
           <h2 class="section-title">
             ENGINEERING<br>
             WITH PURPOSE.
@@ -65,75 +85,186 @@
         </div>
 
         <div class="intro-copy">
+
           <p class="section-description">
-            South Pacific Engineering is focused on delivering dependable
-            engineering and construction solutions. We believe every
-            successful project begins with careful planning, technical
-            expertise, and a commitment to quality.
+            South-Pacific Engineering Ltd delivers integrated engineering
+            excellence across Civil, Mechanical and Refractory Engineering,
+            Project Management, Facility Management and Safety Management.
+
+            We are committed to providing innovative, safe and sustainable
+            solutions that enhance asset value, ensure operational efficiency
+            and exceed client expectations.
           </p>
 
           <a href="/about" class="text-link">
-            Let's Build Together <span aria-hidden="true">↗</span>
+            Discover Our Company <span aria-hidden="true">↗</span>
           </a>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- Services -->
+
+    <!-- Services Section -->
     <section class="section services" id="services">
+
       <div class="container">
+
         <p class="section-label">What We Do</p>
-        <h2 class="section-title">OUR EXPERTISE.</h2>
+
+        <h2 class="section-title">
+          OUR EXPERTISE.
+        </h2>
 
         <div class="service-grid">
+
+          <!-- Service 01 -->
           <article class="service-card">
+
             <span class="service-number">01</span>
+
             <h3>Civil Engineering</h3>
+
             <p>
-              Engineering planning and technical solutions designed
-              around project requirements.
+              Engineering solutions supporting infrastructure,
+              structural development and construction requirements.
+               <img
+    src="/images/civil-engineering.jpeg"
+    alt="civil engineering project shoiwing construction site 
+with structural steelwork"
+  >
             </p>
+
             <span class="service-arrow" aria-hidden="true">↗</span>
+
           </article>
 
+
+          <!-- Service 02 -->
           <article class="service-card">
+
             <span class="service-number">02</span>
-            <h3>Construction</h3>
+
+            <h3>Mechanical Engineering</h3>
+
             <p>
-              Structured construction delivery with attention to
-              workmanship, safety, and quality.
+              Mechanical engineering solutions focused on equipment,
+              systems and operational performance.
+              <img
+                  src="/images/mechanical-engineering.jpeg"
+    alt="mechanical engineering project showing industrial machinery and piping"
+    >
             </p>
+
             <span class="service-arrow" aria-hidden="true">↗</span>
+
           </article>
 
+
+          <!-- Service 03 -->
           <article class="service-card">
+
             <span class="service-number">03</span>
-            <h3>Infrastructure</h3>
+
+            <h3>Refractory Engineering</h3>
+
             <p>
-              Practical infrastructure solutions that support
-              communities, businesses, and development.
+              Engineering support for refractory systems and
+              high-temperature industrial applications.
+              <img
+                  src="/images/refractory-engineering.jpeg"
+                  alt="refractory engineering project showing high-temperature industrial applications"
+              >
             </p>
+
             <span class="service-arrow" aria-hidden="true">↗</span>
+
           </article>
 
+
+          <!-- Service 04 -->
           <article class="service-card">
+
             <span class="service-number">04</span>
-            <h3>Facility Management</h3>
+
+            <h3>Project Management</h3>
+
             <p>
-              Comprehensive facility management services to help
-              maintain buildings, equipment, and operational performance.
+              Coordinated project planning, execution and delivery
+              with attention to quality and efficiency.
+               <img
+                  src="/images/project-management.jpeg"
+    alt="project management project showing team collaborating on planning and scheduling"
+    >
             </p>
+
             <span class="service-arrow" aria-hidden="true">↗</span>
+
           </article>
+
+
+          <!-- Service 05 -->
+          <article class="service-card">
+
+            <span class="service-number">05</span>
+
+            <h3>Facility Management</h3>
+
+            <p>
+              Facility management solutions that support building
+              performance, maintenance and operations.
+            </p>
+
+            <span class="service-arrow" aria-hidden="true">↗</span>
+
+          </article>
+
+
+          <!-- Service 06 -->
+          <article class="service-card">
+
+            <span class="service-number">06</span>
+
+            <h3>Safety Management</h3>
+
+            <p>
+              Safety management practices supporting safer working
+              environments and responsible operations.
+              <img
+               src="/images/safety-management.jpeg"
+    alt="safety management project showing team conducting safety inspection"
+    >
+            </p>
+
+            <span class="service-arrow" aria-hidden="true">↗</span>
+
+          </article>
+
         </div>
+
+        <div class="services-action">
+          <a href="/services" class="text-link">
+            Explore All Our Services <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
       </div>
+
     </section>
 
-    <!-- Projects -->
+
+    <!-- Projects Section -->
     <section class="section projects" id="projects">
+
       <div class="container">
+
         <p class="section-label">Selected Work</p>
-        <h2 class="section-title">BUILT TO LAST.</h2>
+
+        <h2 class="section-title">
+          BUILT TO LAST.
+        </h2>
 
         <p class="section-description projects-intro">
           Explore examples of engineering and construction work.
@@ -141,58 +272,190 @@
         </p>
 
         <div class="project-grid">
+
           <article class="project-card project-large">
-            <img
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
-              alt="Construction site with structural work underway"
-              loading="lazy"
-            >
+<a
+  href="/images/building-development.jpeg"
+  class="project-image-link"
+  data-lightbox
+  aria-label="View Building Development photograph"
+>
+  <img
+    src="/images/building-development.jpeg"
+    alt="Building development project showing construction scaffolding"
+    loading="lazy"
+  >
+</a>
             <div class="project-info">
+
               <span>CONSTRUCTION</span>
+
               <h3>Building Development</h3>
+
             </div>
+
           </article>
 
+
           <article class="project-card">
-            <img
-              src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
-              alt="Modern architectural structure"
-              loading="lazy"
-            >
+
+  <a
+  href="/images/structural-design.jpeg"
+  class="project-image-link"
+  data-lightbox
+  aria-label="View Structural Design photograph"
+>
+  <img
+    src="/images/structural-design.jpeg"
+    alt="Industrial engineering facility showing structural steelwork and plant equipment"
+    loading="lazy"
+  >
+</a>
+
             <div class="project-info">
+
               <span>ENGINEERING</span>
+
               <h3>Structural Design</h3>
+
             </div>
+
           </article>
+
         </div>
 
         <p class="project-note">
-          These images are illustrative placeholders and do not represent
-          verified completed projects by South Pacific Engineering.
-        </p>
+         
+        <a href="/projects" class="text-link">
+          View Project Showcase <span aria-hidden="true">↗</span>
+        </a>
+
       </div>
+
     </section>
+
+    
+<!-- Why Choose Us Section -->
+<section class="section why-choose-us" id="why-choose-us">
+
+  <div class="container">
+
+    <div class="why-choose-header">
+      <div>
+        <p class="section-label">Why Work With Us</p>
+
+        <h2 class="section-title">
+          ENGINEERED<br>
+          FOR EXCELLENCE.
+        </h2>
+      </div>
+
+      <p class="section-description">
+        We are committed to delivering integrated engineering
+        solutions through innovation, safety, sustainability
+        and effective project management.
+      </p>
+    </div>
+
+    <div class="why-choose-grid">
+
+      <article class="why-card">
+        <span class="why-number">01</span>
+        <h3>Integrated Solutions</h3>
+        <p>
+          Our services bring together multiple engineering
+          disciplines to support diverse project requirements.
+        </p>
+      </article>
+
+      <article class="why-card">
+        <span class="why-number">02</span>
+        <h3>Safety and Quality</h3>
+        <p>
+          We place strong emphasis on safety, quality and
+          responsible engineering practices.
+        </p>
+      </article>
+
+      <article class="why-card">
+        <span class="why-number">03</span>
+        <h3>Sustainable Approach</h3>
+        <p>
+          We value innovative and sustainable solutions
+          that contribute to long-term asset performance.
+        </p>
+      </article>
+
+      <article class="why-card">
+        <span class="why-number">04</span>
+        <h3>Project Excellence</h3>
+        <p>
+          We emphasize effective planning, coordination
+          and project management throughout project delivery.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 
     <!-- Contact Call to Action -->
     <section class="section contact" id="contact">
+
       <div class="container contact-inner">
+
         <div>
-          <p class="section-label">Have a Project in Mind?</p>
+
+          <p class="section-label">
+            Have a Project in Mind?
+          </p>
+
           <h2 class="section-title">
             LET'S BUILD<br>
             SOMETHING GREAT.
           </h2>
+
           <p class="section-description">
             Tell us about your project and the engineering support you need.
           </p>
+
         </div>
 
         <a href="/contact#quote" class="btn btn-primary">
           Discuss Your Project <span aria-hidden="true">↗</span>
         </a>
+
       </div>
+
     </section>
+
   </main>
+
+  <!-- Project Image Lightbox -->
+<div class="lightbox" id="projectLightbox" aria-hidden="true">
+
+  <button
+    class="lightbox-close"
+    id="lightboxClose"
+    aria-label="Close image viewer"
+  >
+    &times;
+  </button>
+
+  <img
+    src=""
+    alt=""
+    id="lightboxImage"
+  >
+
+</div>
 
   <!-- Shared Footer -->
   <%- include("partials/footer") %>
+
+</body>
+</html>
